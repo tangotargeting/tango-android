@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "656539350284",
+    "firebase_url": "https://tango-7b64d.firebaseio.com",
+    "project_id": "tango-7b64d",
+    "storage_bucket": "tango-7b64d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656539350284:android:05193c034c866dcd",
+        "android_client_info": {
+          "package_name": "com.tangotargeting.sample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656539350284-sg8blnehhno5hiihv4fo97n349n7rlsu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPWObd4tdX07iGvgPeTzS-GVDmC9XkjBc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
