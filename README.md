@@ -111,7 +111,7 @@ allprojects {
 
 **2. Add snapshot dependency to your module build.gradle**
 ```groovy
-  compile ('com.tangotargeting:tango:1.2.0-SNAPSHOT'){
+  compile ('com.tangotargeting:tango:1.2.1-SNAPSHOT'){
     transitive = true;
   }
 ```
