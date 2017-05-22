@@ -86,35 +86,6 @@ public class CustomActionReceiver extends BroadcastReceiver {
 }
 ```
 
-## Advanced - Snapshot releases
-
-If you want to use the latest development snapshot:
-
-**1. Add snapshot repository to your root build.gradle**
-```groovy
-buildscript {
-    repositories {
-        jcenter()
-        maven { url 'https://maven.tangotargeting.com/repository/maven-public' }
-        maven { url 'https://maven.tangotargeting.com/repository/maven-snapshots' }
-    }
-}
-
-allprojects {
-    repositories {
-        jcenter()
-        maven { url 'https://maven.tangotargeting.com/repository/maven-public' }
-        maven { url 'https://maven.tangotargeting.com/repository/maven-snapshots' }
-    }
-}
-```
-
-**2. Add snapshot dependency to your module build.gradle**
-```groovy
-  compile ('com.tangotargeting:tango:1.2.0-SNAPSHOT'){
-    transitive = true;
-  }
-```
 
 ## Troubleshooting
 
