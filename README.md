@@ -28,7 +28,7 @@ allprojects {
 
 **2. Downdload via Gradle:**
 ``` groovy
-compile ('com.tangotargeting:tango:1.0.4') {
+compile ('com.tangotargeting:tango:2.0.0') {
 	transitive = true;
 }
 ```
