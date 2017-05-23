@@ -101,15 +101,15 @@ public class CustomActionReceiver extends BroadcastReceiver {
 ```
 and declare it in the `AndroidManifest.xml` file:
 ```xml
-	<application>
-    	...
-        <receiver android:name=".CustomActionReceiver">
-          <intent-filter>
+<application>
+    ...
+    <receiver android:name=".CustomActionReceiver">
+        <intent-filter>
             <action android:name="com.tangotargeting.intent.action.CUSTOM_CTA"/>
-          </intent-filter>
-        </receiver>
-    	...
-    </application>
+        </intent-filter>
+    </receiver>
+    ...
+</application>
 ```
 
 ## Troubleshooting
