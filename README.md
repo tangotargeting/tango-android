@@ -58,11 +58,11 @@ Tango uses FCM to send real-time campaigns to devices. You have to add FCM to yo
 
 After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
 
-![alt text][fcm-server-key-location]
+![alt image][fcm-server-key-location]
 
 Then go to Tango Console and add them to your app.
 
-![alt text][tango-server-key-location]
+![alt image][tango-server-key-location]
 
 Hit the **Update** button.
 
