@@ -58,11 +58,11 @@ Tango uses FCM to send real-time campaigns to devices. You have to add FCM to yo
 
 After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
 
-![alt image][fcm-server-key-location]
+![FCM Server Key and Sender Id location](https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png?raw=true)
 
 Then go to Tango Console and add them to your app.
 
-![alt image][tango-server-key-location]
+![Tango Server Key and Sender Id location](https://github.com/tangotargeting/tango-documentation/blob/master/tango-server-key-location.png?raw=true)
 
 Hit the **Update** button.
 
@@ -116,5 +116,3 @@ public class CustomActionReceiver extends BroadcastReceiver {
  [1]: http://tangotargeting.com
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
- [fcm-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png?raw=true "FCM Server Key and Sender Id location"
- [tango-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/tango-server-key-location.png?raw=true "Tango Server Key and Sender Id location"
