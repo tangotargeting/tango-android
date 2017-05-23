@@ -53,11 +53,11 @@ compile ('com.tangotargeting:tango:2.0.0') {
 You can find your Company API key by visiting the integration page inside the console of your Tango dashboard.
 </span>
 
-### 3. Add Firebase (FCM) to your project
+### 3. Add Firebase to your project
 
-[Add Firebase Messaging][3]
+[Add Firebase][3]
 
-Tango uses FCM to send real-time campaigns to devices. You have to add FCM to your project by following the instructions [here][3].
+Tango uses FCM to send real-time campaigns to devices. You have to add Firebase to your project by following the instructions [here][3].
 
 After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
 
