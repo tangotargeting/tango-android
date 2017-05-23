@@ -45,12 +45,12 @@ compile ('com.tangotargeting:tango:2.0.0') {
     ...
  	<meta-data
         android:name="tango_api_key"
-        android:value="<YOUR_TANGO_API_KEY>"/>
+        android:value="YOUR_TANGO_API_KEY"/>
     ...
 </application>
 ```
 <span class="tango_hide">
-You can find your Company API key by visiting the integration page inside the console of your [Tango console][2].
+You can find your Company API key by visiting the integration page inside the console of your Tango dashboard.
 </span>
 
 ### 3. Add Firebase (FCM) to your project
