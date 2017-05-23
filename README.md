@@ -2,46 +2,55 @@
 
 Mobile Engagement Automation
 
-For more information please see [the website][1].
+For more information please visit [Tango Targeting][1].
 
 
 ## Installation
 
 Tango Targeting SDK requires at minimum Android 4.0.1.
 
-**1. Add maven repository to your root** ```build.gradle```
+### 1. Add maven repository to your root ```build.gradle```
 ```groovy
 buildscript {
     repositories {
-        jcenter()
+        ...
         maven { url 'https://maven.tangotargeting.com/repository/maven-public' }
+        ...
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        ...
         maven { url 'https://maven.tangotargeting.com/repository/maven-public' }
+        ...
     }
 }
 ```
 
-**2. Downdload via Gradle:**
+### 2. Downdload via Gradle:
+
+In your app's ``build.gradle`` file add the following dependency.
+
 ``` groovy
 compile ('com.tangotargeting:tango:2.0.0') {
 	transitive = true;
 }
 ```
 
-**3. Add the following lines to your** ``` AndroidManifest.xml ```
+### 3. In `AndroidManifest.xml`, add the `meta-data` containing the Tango API key:
 ``` xml
 <application>
+    ...
  	<meta-data
         android:name="tango_api_key"
-        android:value="API_KEY"/>
+        android:value="<YOUR_TANGO_API_KEY>"/>
+    ...
 </application>
 ```
+<span class="tango_hide">
 You can find your Company API key by visiting the integration page inside the console of your [Tango console][2].
+</span>
 
 **3. Add Firebase (FCM) to your project**
 
@@ -56,7 +65,7 @@ You do not need to add these permissions to you Android Manifest
 <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission android:name="android.permission.INTERNET"/>
-<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED”/>
+<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
 However if your ``` targetSdkVersion>22 ``` you will need to request runtime permissions for Location permission when you think is most suitable for the user.
 
