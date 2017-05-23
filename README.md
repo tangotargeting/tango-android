@@ -61,7 +61,10 @@ After you have succesfully integrated Firebase, copy the FCM **Server key** and 
 ![alt text][fcm-server-key-location]
 
 Then go to Tango Console and add them to your app.
+
 ![alt text][tango-server-key-location]
+
+Hit the **Update** button.
 
 ### 4. Our SDK relies on the following permissions.
 
