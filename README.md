@@ -66,17 +66,18 @@ Then go to Tango Console and add them to your app.
 
 Hit the **Update** button.
 
-### 4. Our SDK relies on the following permissions.
+### 4. Permissions
 
-You do not need to add these permissions to you Android Manifest
+Tango SDK relies on the following permissions:
+
 ```xml
 <uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
-However if your ``` targetSdkVersion>22 ``` you will need to request runtime permissions for Location permission when you think is most suitable for the user.
 
+You do not need to add these permissions to you Android Manifest. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` permission at runtime whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
 
 ### You are ready to go with the basics!
 
@@ -116,3 +117,4 @@ public class CustomActionReceiver extends BroadcastReceiver {
  [1]: http://tangotargeting.com
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
+ [4]: https://developer.android.com/training/permissions/requesting.html#perm-check
