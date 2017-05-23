@@ -55,6 +55,8 @@ You can find your Company API key by visiting the integration page inside the co
 
 ### 3. Add Firebase (FCM) to your project
 
+[Add Firebase Messaging][3]
+
 Tango uses FCM to send real-time campaigns to devices. You have to add FCM to your project by following the instructions [here][3].
 
 After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
