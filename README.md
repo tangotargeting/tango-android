@@ -38,7 +38,7 @@ compile ('com.tangotargeting:tango:2.0.0') {
 }
 ```
 
-### 3. In `AndroidManifest.xml`, add the `meta-data` containing the Tango API key:
+### 3. In `AndroidManifest.xml`, add the `meta-data` containing your Tango API key:
 ``` xml
 <application>
     ...
@@ -52,13 +52,18 @@ compile ('com.tangotargeting:tango:2.0.0') {
 You can find your Company API key by visiting the integration page inside the console of your [Tango console][2].
 </span>
 
-**3. Add Firebase (FCM) to your project**
+### 3. Add Firebase (FCM) to your project
 
 Tango uses FCM to send real-time campaigns to devices. You have to add FCM to your project by following the instructions [here][3].
 
+After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
+
+![alt Server Key and Sender Id location][fcm-server-key-location]
+
+
 Add **Server key** and **Sender Id** to our console after integration.
 
-**4. Our SDK relies on the following permissions.**
+### 4. Our SDK relies on the following permissions.
 
 You do not need to add these permissions to you Android Manifest
 ```xml
@@ -108,3 +113,4 @@ public class CustomActionReceiver extends BroadcastReceiver {
  [1]: http://tangotargeting.com
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
+ [fcm-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png "Logo Title Text 2"
