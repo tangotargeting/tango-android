@@ -7,7 +7,7 @@ For more information please visit [Tango Targeting][1].
 
 ## Installation
 
-Tango Targeting SDK requires at minimum Android 4.0.1.
+Tango Targeting SDK requires at least Android 4.0.1.
 
 ### 1. Add maven repository to your root ```build.gradle```
 
