@@ -10,6 +10,7 @@ For more information please visit [Tango Targeting][1].
 Tango Targeting SDK requires at minimum Android 4.0.1.
 
 ### 1. Add maven repository to your root ```build.gradle```
+
 ```groovy
 buildscript {
     repositories {
@@ -32,14 +33,14 @@ allprojects {
 
 In your app's ``build.gradle`` file add the following dependency.
 
-``` groovy
+```groovy
 compile ('com.tangotargeting:tango:2.0.0') {
 	transitive = true;
 }
 ```
 
 ### 3. In `AndroidManifest.xml`, add the `meta-data` containing your Tango API key:
-``` xml
+```xml
 <application>
     ...
  	<meta-data
