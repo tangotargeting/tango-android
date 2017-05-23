@@ -116,5 +116,5 @@ public class CustomActionReceiver extends BroadcastReceiver {
  [1]: http://tangotargeting.com
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
- [fcm-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png "FCM Server Key and Sender Id location"
- [tango-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/tango-server-key-location.png "Tango Server Key and Sender Id location"
+ [fcm-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png?raw=true "FCM Server Key and Sender Id location"
+ [tango-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/tango-server-key-location.png?raw=true "Tango Server Key and Sender Id location"
