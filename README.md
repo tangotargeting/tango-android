@@ -82,7 +82,7 @@ You do not need to add these permissions to your Android Manifest file. However,
 
 ## You are ready to go!
 
-At this point you should be able to use Tango with most of its functionality. The following step is for enabling handling custom triggered campaigns actions.
+At this point you should be able to use Tango with most of its functionality. The following step is for enabling handling custom triggered campaigns' actions.
 
 ### 5. Handle custom campaign actions 
 
