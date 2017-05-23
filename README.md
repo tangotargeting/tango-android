@@ -60,8 +60,8 @@ After you have succesfully integrated Firebase, copy the FCM **Server key** and 
 
 ![alt text][fcm-server-key-location]
 
-
-Add **Server key** and **Sender Id** to our console after integration.
+Then go to Tango Console and add them to your app.
+![alt text][tango-server-key-location]
 
 ### 4. Our SDK relies on the following permissions.
 
@@ -114,3 +114,4 @@ public class CustomActionReceiver extends BroadcastReceiver {
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
  [fcm-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png "FCM Server Key and Sender Id location"
+ [tango-server-key-location]: https://github.com/tangotargeting/tango-documentation/blob/master/tango-server-key-location.png "Tango Server Key and Sender Id location"
