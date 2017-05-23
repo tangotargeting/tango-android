@@ -77,21 +77,17 @@ Tango SDK relies on the following permissions:
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
 
-You do not need to add these permissions to you Android Manifest. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` permission at runtime whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
+You do not need to add these permissions to your Android Manifest file. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` permission at runtime, whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
 
-### You are ready to go with the basics!
+## You are ready to go!
 
-**5. Add a BroadcastReceiver for custom call to actions**
+At this point you should be able to use Tango with most of its functionality. The following step is for enabling handling custom triggered campaigns actions.
 
-```xml
-    <receiver android:name=".CustomActionReceiver">
-      <intent-filter>
-        <action android:name="com.tangotargeting.intent.action.CUSTOM_CTA"/>
-      </intent-filter>
-    </receiver>
-```
-and
-```groovy
+### 5. Handle custom campaign actions 
+
+Create a BroadcastReceiver that will intercept the actions:
+
+```Java
 public class CustomActionReceiver extends BroadcastReceiver {
   private static final String KEY_CTA = "com.tangotargeting.intent.extra.CTA";
 
@@ -103,7 +99,18 @@ public class CustomActionReceiver extends BroadcastReceiver {
   }
 }
 ```
-
+and declare it in the `AndroidManifest.xml` file:
+```xml
+	<application>
+    	...
+        <receiver android:name=".CustomActionReceiver">
+          <intent-filter>
+            <action android:name="com.tangotargeting.intent.action.CUSTOM_CTA"/>
+          </intent-filter>
+        </receiver>
+    	...
+    </application>
+```
 
 ## Troubleshooting
 
