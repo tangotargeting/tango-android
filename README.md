@@ -86,6 +86,8 @@ Tango SDK relies on the following permissions:
 
 You do not need to add these permissions to your Android Manifest file. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` and `android.permission.READ_EXTERNAL_STORAGE` permissions at runtime, whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
 
+There are open-source libraries that can help you manage runtime permissions. Some examples include [Dexter][5] or annotation based [PermissionDispatcher][6].
+
 ## You are ready to go!
 
 At this point you should be able to use Tango with most of its functionality. The following step is for enabling handling custom triggered campaigns' actions.
@@ -132,3 +134,5 @@ and declare it in the `AndroidManifest.xml` file:
  [2]: https://app.tangotargeting.com/integration/android
  [3]: https://firebase.google.com/docs/android/setup
  [4]: https://developer.android.com/training/permissions/requesting.html#perm-check
+ [5]: https://github.com/Karumi/Dexter
+ [6]: https://github.com/hotchemi/PermissionsDispatcher
