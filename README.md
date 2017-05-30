@@ -74,13 +74,17 @@ Hit the **Update** button.
 Tango SDK relies on the following permissions:
 
 ```xml
-<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
+<!-- Runtime permissions-->
+<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+<!--Normal permissions-->
+<uses-permission android:name="com.android.browser.permission.READ_HISTORY_BOOKMARKS"/>
 <uses-permission android:name="android.permission.INTERNET"/>
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
 
-You do not need to add these permissions to your Android Manifest file. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` permission at runtime, whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
+You do not need to add these permissions to your Android Manifest file. However, if your ` targetSdkVersion` is higher than **22** you will need to request the `android.permission.ACCESS_FINE_LOCATION` and `android.permission.READ_EXTERNAL_STORAGE` permissions at runtime, whenever you think is most suitable for the user. [Here][4] is how to request a persmission at runtime.
 
 ## You are ready to go!
 
