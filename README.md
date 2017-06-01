@@ -45,7 +45,7 @@ compile ('com.tangotargeting:tango:2.0.0') {
     ...
  	<meta-data
         android:name="tango_api_key"
-        android:value="YOUR_TANGO_API_KEY"/>
+        android:value="TANGO_API_KEY"/>
     ...
 </application>
 ```
