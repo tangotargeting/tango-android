@@ -85,7 +85,7 @@ Then go to Tango Console and add them to your app.
 
 Hit the **Update** button.
 
-### 4. Permissions
+### 5. Permissions
 
 Tango SDK relies on the following permissions:
 
@@ -108,7 +108,7 @@ There are open-source libraries that can help you manage runtime permissions. So
 
 At this point you should be able to use Tango with most of its functionality. The following step is for enabling handling custom triggered campaigns' actions.
 
-### 5. Handle custom campaign actions 
+### 6. Handle custom campaign actions 
 
 Create a BroadcastReceiver that will intercept the actions:
 
