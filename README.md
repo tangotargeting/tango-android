@@ -39,21 +39,6 @@ compile ('com.tangotargeting:tango:2.0.0') {
 }
 ```
 
-### 3. Add the following Firebase and Play Services dependencies
-
-```groovy
-final FIREBASE_VERSION = '11.0.2'
-final PLAY_SERVICES_VERSION = '11.0.2'
-  
-compile "com.google.firebase:firebase-core:$FIREBASE_VERSION"
-compile "com.google.firebase:firebase-messaging:$FIREBASE_VERSION"
-compile "com.google.android.gms:play-services-base:$PLAY_SERVICES_VERSION"
-compile "com.google.android.gms:play-services-basement:$PLAY_SERVICES_VERSION"
-compile "com.google.android.gms:play-services-location:$PLAY_SERVICES_VERSION"
-```
-
-**Important:** if you already have some firebase dependencies, make sure to use the same version for all of them. We recommend using the latest version.
-
 ### 3. In `AndroidManifest.xml`, add the `meta-data` containing your Tango API key:
 ```xml
 <application>
@@ -68,12 +53,28 @@ compile "com.google.android.gms:play-services-location:$PLAY_SERVICES_VERSION"
 You can find your Company API key by visiting the integration page inside the console of your Tango dashboard.
 </span>
 
-### 3. Add Firebase to your project
+### 4. Add Firebase to your project
 
-[Add Firebase][3]
+#### 4.1 [Add Firebase][3]
 
 Tango uses FCM to send real-time campaigns to devices. You have to add Firebase to your project by following the instructions [here][3].
 
+#### 4.2 Add the following Firebase and Play Services dependencies
+
+```groovy
+final FIREBASE_VERSION = '11.0.2'
+final PLAY_SERVICES_VERSION = '11.0.2'
+  
+compile "com.google.firebase:firebase-core:$FIREBASE_VERSION"
+compile "com.google.firebase:firebase-messaging:$FIREBASE_VERSION"
+compile "com.google.android.gms:play-services-base:$PLAY_SERVICES_VERSION"
+compile "com.google.android.gms:play-services-basement:$PLAY_SERVICES_VERSION"
+compile "com.google.android.gms:play-services-location:$PLAY_SERVICES_VERSION"
+```
+
+**Important:** if you already have some firebase dependencies, make sure to use the same version for all of them. We recommend using the latest version.
+
+#### 4.3 Add the Server key and Sender Id to your Tango Dashboard
 After you have succesfully integrated Firebase, copy the FCM **Server key** and **Sender Id** from here: 
 
 ![FCM Server Key and Sender Id location](https://github.com/tangotargeting/tango-documentation/blob/master/fcm-server-key-location.png?raw=true)
