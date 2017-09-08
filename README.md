@@ -39,6 +39,21 @@ compile ('com.tangotargeting:tango:2.0.0') {
 }
 ```
 
+### 3. Add the following Firebase and Play Services dependencies
+
+```groovy
+final FIREBASE_VERSION = '11.0.2'
+final PLAY_SERVICES_VERSION = '11.0.2'
+  
+compile "com.google.firebase:firebase-core:$FIREBASE_VERSION"
+compile "com.google.firebase:firebase-messaging:$FIREBASE_VERSION"
+compile "com.google.android.gms:play-services-base:$PLAY_SERVICES_VERSION"
+compile "com.google.android.gms:play-services-basement:$PLAY_SERVICES_VERSION"
+compile "com.google.android.gms:play-services-location:$PLAY_SERVICES_VERSION"
+```
+
+**Important:** if you already have some firebase dependencies, make sure to use the same version for all of them. We recommend using the latest version.
+
 ### 3. In `AndroidManifest.xml`, add the `meta-data` containing your Tango API key:
 ```xml
 <application>
